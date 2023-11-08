@@ -66,7 +66,7 @@ app.post('/submit-form', async (req, res) => {
 });
 
 // Serve static files from the React app build directory
-app.use(express.static(path.join(__dirname, '../build')));
+// app.use(express.static(path.join(__dirname, '../build')));
 
 // All remaining requests return the React app, so it can handle routing
 // app.get('*', function(req, res) {
