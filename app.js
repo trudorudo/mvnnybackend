@@ -69,9 +69,9 @@ app.post('/submit-form', async (req, res) => {
 app.use(express.static(path.join(__dirname, '../build')));
 
 // All remaining requests return the React app, so it can handle routing
-app.get('*', function(req, res) {
-  res.sendFile(path.join(__dirname, '../build', 'index.html'));
-});
+// app.get('*', function(req, res) {
+//   res.sendFile(path.join(__dirname, '../build', 'index.html'));
+// });
 
 // Start the server
 app.listen(port, () => {
